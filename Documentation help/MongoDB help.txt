@@ -1,0 +1,15 @@
+db "name" -> create 
+
+
+MongoDB:
+------------
+
+Open CMD by Shift+ Right Click in the C:\Program Files\MongoDB\Server\3.4\bin to start MongoDB
+
+
+	db "name" 					-> Creates a new DB folder in C:\data
+	use "name" 					-> Switch (or create if not existing) the named database
+	show collections				-> Show a list of different collections (eg: "users", "items", "books", "promotions", "genres")  
+	db.createCollection('name')			-> Creates a new type of collection
+	db.COLLECTION-NAME.find()			-> Searches the assigned collection for all items
+	db.COLLECTION-NAME.insert({name: 'name'})	-> inserts new item into the COLLECTION

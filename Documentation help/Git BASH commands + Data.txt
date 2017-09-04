@@ -1,0 +1,211 @@
+ __________________________________________________________________________________
+|                                                  |                               |
+|  Node:        v7.2.0 LTS                         |       Muppala:     v4.2.3     |
+|  NPM:         v4.1.1                             |       Muppala:     v2.14.7    | 
+|  Bower:       v1.8.0                             |       Muppala:     v1.6.5     |
+|  Gulp CLI:    v1.2.2 // Gulp Local: v3.9.1       |       Muppala CLI: v3.9.0     |
+|  Json-Server: v0.94                              |       Muppala:     v------    |
+|  Cordova:     v6.5.0                             |       Muppala:     v------    |
+|  Ionic:       v2.2.1                             |       Muppala:     v------    |
+|__________________________________________________|_______________________________|
+
+
+Windows Command Prompt (CMD):
+------------
+
+	netstat -a -o					-> Shows all port connections
+	ipconfig /all					-> Shows all Ethernet Adapter settings
+	X: 						-> Moves to directory "X:"
+	cd "X:\x\x\x\Y					-> Moves to folder "Y"
+	dir						-> Prints list of files/folders in the directory
+	mkdir \data\db					-> Creates a directory (mkdir = make directory) 
+	cd "Program Files\mongoDB\Server\3.4\bin"	-> Go to the named directory
+	cd ..						-> Go to the previous directory.
+
+JSON Server Hosting:
+--------------------
+
+
+	json-server --watch db.json --port 3000    -> Start server.
+	
+	gulp		  			   -> Build Dist folder
+	
+	http://localhost:3000/		           -> Open website locally
+	http://localhost:3000/dishes
+
+	http://localhost:3000/promotions
+
+	http://localhost:3000/leadership
+
+	http://localhost:3000/feedback
+
+
+MongoDB:
+--------
+Use CMD, not Git Bash
+
+	mongod --dbpath=data 						-> Starts the MongoDB Server
+	db								-> Tell you what database you currently are using
+	use conFusion							-> Switch to db ConFusion database
+	db.help()							-> Print out commands list help
+	db.dishes.insert({ name: "Uthapizza", description: "Test" });	-> Create "dishes" and add to the list a dish
+	db.dishes.find().pretty();					-> Print out data in a "pretty" manner
+	var id = new ObjectId();
+
+Node:
+-----
+
+	npm install 		 -> install all the Node modules listed in packages.json
+
+
+
+
+Express Generator:
+--------------------
+
+  	express node-express-gen -> To scaffold out an Express application
+
+	npm start		  -> Start the Express server 
+
+
+
+Ionic Server Hosting:
+---------------------
+
+Ionic server commands, enter:
+  restart or r to restart the client app from the root
+  goto or g and a url to have the app navigate to the given url
+  consolelogs or c to enable/disable console log output
+  serverlogs or s to enable/disable server log output
+  quit or q to shutdown the server and exit
+
+	ionic serve			-> Serve up       
+	ionic serve --lab		-> ionic LAB - Test on Android & iOS       
+	ionic serve --debug		-> Ionic App with debugging                
+	ionic serve --all		->
+        ionic start conFusion sidemenu  -> Build Ionic Folder 
+	ionic resources			-> Rebuilds the Resources folder to apply changes
+
+	IONIC INSTALL AND LOAD ONTO ANDROID EMULATOR:
+	---------------------------------------------
+	ionic platform remove android	-> Remove Android platofrm from Ionic
+	ionic platform add android	-> Adds Android platform to Ionic
+	ionic build android		-> Builds up the app after changes have been made
+	ionic emulate android		-> Installs the Ionic project onto the Android emulator
+	cordova run android		-> Builds and deploys app onto MOBILE DEVICE
+
+	IONIC PLUGINS [HOW TO]:
+	--------------
+	ionic plugin add https://github.com/EddyVerbruggen/Toast-PhoneGap-Plugin.git
+	ionic plugin add de.appplant.cordova.plugin.local-notification
+
+	OTHER:
+	------
+	npm install -g ionic  -> Install ionic
+	ionic start myApp
+	cd myApp
+	ionic platform ios
+	ionic emulate ios
+	ionic run ios
+
+
+
+Cordova:
+----------
+
+
+	ionic build android    		-> Builds Android App.
+	
+	ionic emulate android		-> Build Dist folder
+	
+	http://localhost:3000/		-> Open website locally
+	http://localhost:3000/dishes
+
+	http://localhost:3000/promotions
+
+	http://localhost:3000/leadership
+
+	http://localhost:3000/feedback
+
+
+
+Node Version Manager Windows (NVMW)
+-----------------------------------
+
+nvmw -h
+
+  Usage: nvmw [options] [command]
+
+  Commands:
+
+    install <version>      install the given version of Node
+    uninstall <version>    uninstall the given version of Node
+    use <version>          use the given version of Node in current shell
+    deactivate             undo effects of nvmw in current shell
+    switch <version>       permanently use the given version of Node as default
+    switch-deactivate      permanently undo effects of nvmw
+    ls                     list the installed all Nodes
+    ls-remote              list remote versions available for install
+    cleanup                remove stale local caches
+
+  Options:
+
+    -h, --help     output usage information
+    -V, --version  output the version number
+
+  Examples:
+
+    nvmw install v0.10.20
+    nvmw uninstall v0.10.20
+    nvmw use v0.10.20
+
+
+
+
+Yeoman (Yo):
+------------
+The web's scaffolding tool for modern webapps
+
+
+
+
+
+GULP:
+-----
+Alternative to Grunt
+
+	npm install gulp-cli -g
+	npm install gulp -D
+	touch gulpfile.js
+	gulp --help
+
+
+
+
+GRUNT:
+------
+Alternative to Gulp
+
+
+
+
+NPM:
+----
+
+	npm install mongoose --save
+     
+	npm install assert --save
+	npm install gulp-cli -g
+	npm install gulp -D
+	npm start			-> starts the REST or Express server
+
+
+
+
+
+
+
+REST API:
+---------
+
+	npm start			-> starts the server  
