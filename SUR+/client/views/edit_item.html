@@ -1,0 +1,160 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+
+<div class="py-5  section">
+  <div class="col-md-12">
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h1 class="panel-title">Edit an Item!</h1>
+
+    <h3 class="text-primary my-3">Item info...</h3>
+
+  </div>
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-md-12">
+      <form ng-submit="editItem()">
+        <div class="form-group">
+          <label>Item Title</label>
+          <input type="text" class="form-control" ng-model="item.title" placeholder="Title">
+        </div>
+        <div class="form-group">
+          <label>Category</label>
+          <select ng-model="item.category" class="form-control">
+            <option value="Admixture">Admixture</option>
+            <option value="Adobe brick">Adobe brick</option>
+            <option value="Aggregates">Aggregates</option>
+            <option value="Angles">Angles</option>
+            <option value="Ashlar">Ashlar</option>
+            <option value="Bent glass">Bent glass</option>
+            <option value="Bond">Bond</option>
+            <option value="Bond beams">Bond beams</option>
+            <option value="Brick masonry">Brick masonry</option>
+            <option value="Building brick">Building brick</option>
+            <option value="Cement">Cement</option>
+            <option value="Ceramic tiles">Ceramic tiles</option>
+            <option value="Concrete">Concrete</option>
+            <option value="Concrete brick">Concrete brick</option>
+            <option value="Concrete masonry unit">Concrete masonry unit</option>
+            <option value="Cut stones">Cut stones</option>
+            <option value="Facebrick">Facebrick</option>
+            <option value="Ferrous metals">Ferrous metals</option>
+            <option value="Firebrick">Firebrick</option>
+            <option value="Fired clay tile">Fired clay tile</option>
+            <option value="Flexible insulation">Flexible insulation</option>
+            <option value="Float glass">Float glass</option>
+            <option value="Gage system">Gage system</option>
+            <option value="Glass block">Glass block</option>
+            <option value="Glazed brick">Glazed brick</option>
+            <option value="Gravel">Gravel</option>
+            <option value="Grout">Grout</option>
+            <option value="Headers">Headers</option>
+            <option value="Hydration">Hydration</option>
+            <option value="Insulating glass">Insulating glass</option>
+            <option value="Kiln-burned brick">Kiln-burned brick</option>
+            <option value="Laminating">Laminating</option>
+            <option value="Lintels">Lintels</option>
+            <option value="Loose-fill insulation">Loose-fill insulation</option>
+            <option value="Lumber">Lumber</option>
+            <option value="Mosaic tiles">Mosaic tiles</option>
+            <option value="Nonferrous metals">Nonferrous metals</option>
+            <option value="Patterned glass">Patterned glass</option>
+            <option value="Paving brick">Paving brick</option>
+            <option value="Plastics">Plastics</option>
+            <option value="Plate glass">Plate glass</option>
+            <option value="Plywood">Plywood</option>
+            <option value="Quarry tile">Quarry tile</option>
+            <option value="Reflective insulation">Reflective insulation</option>
+            <option value="Reinforcing bars">Reinforcing bars</option>
+            <option value="Rigid insulation">Rigid insulation</option>
+            <option value="Rough-sawn lumber">Rough-sawn lumber</option>
+            <option value="Rubble">Rubble</option>
+            <option value="R-value">R-value</option>
+            <option value="Safety glass">Safety glass</option>
+            <option value="Sand-lime brick">Sand-lime brick</option>
+            <option value="Sheet glass">Sheet glass</option>
+            <option value="Single-wythe walls">Single-wythe walls</option>
+            <option value="Stained glass">Stained glass</option>
+            <option value="Stone masonry">Stone masonry</option>
+            <option value="Stretcher">Stretcher</option>
+            <option value="Structural clay tile">Structural clay tile</option>
+            <option value="Structural steel">Structural steel</option>
+            <option value="Surfaced lumber">Surfaced lumber</option>
+            <option value="Terra cotta">Terra cotta</option>
+            <option value="Thermal insulation">Thermal insulation</option>
+            <option value="Welded wire fabric">Welded wire fabric</option>
+            <option value="(WWF)">(WWF)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Weight (kg.)</label>
+          <input type="number" min="0" class="form-control" ng-model="item.weight" placeholder="...">
+        </div>
+        <div class="form-group">
+          <label>Dimensions (cm.)</label>
+          <input type="number" min="0" class="form-control" ng-model="item.dimensionsX" placeholder="X">
+                    <input type="number" min="0" class="form-control" ng-model="item.dimensionsY" placeholder="Y">
+                              <input type="number" min="0" class="form-control" ng-model="item.dimensionsZ" placeholder="Z">
+        </div>
+        <div class="form-group">
+          <label>Description</label>
+          <textarea class="form-control" ng-model="item.description" placeholder="Description [Max 1000 characters]..." maxlength="1000"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>Price</label>
+          <input type="number" min="0" class="form-control" ng-model="item.price" placeholder="..." maxlength="5">
+        </div>
+
+
+        <div class="form-group bottom-three">
+          <label>Image URL</label>
+          <input type="url" class="form-control" ng-model="item.image_url" placeholder="Image URL">
+        </div>
+
+
+
+
+        <h3 class="text-primary my-3">Contact info...</h3>
+
+        <div class="form-group">
+          <label>Full Name</label>
+          <input type="text" class="form-control" ng-model="item.user" placeholder="Full Name">
+        </div>
+
+        <div class="form-group">
+          <label>E-mail</label>
+          <input type="email" class="form-control" ng-model="item.email" placeholder="E-mail address">
+        </div>
+
+        <div class="form-group">
+          <label>Telephone</label>
+          <input type="tel" class="form-control" ng-model="item.telephone" placeholder="Your telephone number... [Include Country Dialing Code]">
+        </div>
+         <div class="form-group">
+           <label>Mobile</label>
+           <input type="tel" class="form-control" ng-model="item.mobile" placeholder="Your telephone number... [Include Country Dialing Code]">
+         </div>
+
+
+
+
+
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+    </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+</div>
+
+
+    <div class="col-md-6 pixel-drop-lg"><img src="images/rectangle_u21.png"</img></div>
+
+</div>
+</div>
