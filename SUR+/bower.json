@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "name": "SUR+",
   "version": "1.0.0",
@@ -29,3 +30,36 @@
     "angular-ui-router": "~0.2.15"
   }
 }
+=======
+{
+  "name": "SUR+",
+  "version": "1.0.0",
+  "description": "Advertise your surplus materials without the need of registering",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "conFusion",
+    "Fusion",
+    "Restaurant"
+  ],
+  "authors": [
+    "Hyper Droid"
+  ],
+  "license": "",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "font-awesome": "~4.4.0",
+    "angular": "~1.4.7",
+    "angular-route": "~1.4.8",
+    "angular-ui-router": "~0.2.15"
+  }
+}
+>>>>>>> 8a2d59e6afde91891281e5297c9e5212616c3f61
